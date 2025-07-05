@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>298</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #E8D4C6</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="hour_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: #B8B8B8;
+	font-size: 15px;
+	font-family: &quot;Arial&quot;;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Countdown_Timer/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+QComboBox:on {
+	border: 2px solid #7A7A7A;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #7A7A7A;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #B8B8B8;
+	color: black;
+	selection-background-color: #F3E9E2;
+	selection-color: black;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="minutes_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: #B8B8B8;
+	font-size: 15px;
+	font-family: &quot;Arial&quot;;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Countdown_Timer/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+QComboBox:on {
+	border: 2px solid #7A7A7A;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #7A7A7A;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #B8B8B8;
+	color: black;
+	selection-background-color: #F3E9E2;
+	selection-color: black;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="seconds_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+	background-color: #B8B8B8;
+	font-size: 15px;
+	font-family: &quot;Arial&quot;;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Countdown_Timer/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+QComboBox:on {
+	border: 2px solid #7A7A7A;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #7A7A7A;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox QAbstractItemView {
+	background-color: #B8B8B8;
+	color: black;
+	selection-background-color: #F3E9E2;
+	selection-color: black;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hour_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Hours</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="minutes_label">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>80</y>
+      <width>55</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Minutes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="seconds_label">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>80</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Seconds</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status_label">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>10</y>
+      <width>271</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ready To Set!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="set_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>160</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: #ADADAD;
+	border: 2px solid;
+	border-radius: 12px;
+}
+
+QPushButton:hover {
+	background: #D6D6D6;
+	border: 2px solid #5C5C5C;
+}</string>
+    </property>
+    <property name="text">
+     <string>Set</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>298</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>set_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>66</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
